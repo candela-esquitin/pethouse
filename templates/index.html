@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{%block body%}
+
+<section>
+    <div>
+        <div>
+            <h1 class="">Vamos a encontrar a tu amigo</h1>
+            <p>Busque mascotas de nuestra red de constante crecimiento de múltiples refugios y rescates para encontrar la combinación perfecta.</p>
+            <button><a href="{{ url_for('buscar')}}">Empieza aqui</a></button>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+    
+    <div>
+        <div>
+            <strong>115+</strong>
+            <p>Mascotas disponibles</p>
+        </div>
+        <div>
+            <strong>58+</strong>
+            <p>Emparejamientos disponibles</p>
+        </div>
+        <div>
+            <strong>173+</strong>
+            <p>Animales Salvados</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <p>El proceso es dividido en tres faciles pasos</p>
+        <h1>Como funciona?</h1>
+        <div>
+            <div>
+                <h3>Suscribite a nuestro WebSite</h3>
+                <p>Contactanos y agenda una entrevista. Responde tan honestamente como puedaspara facilitar un buen y duradero vinculo.</p>
+            </div>
+            <div>
+                <h3>Encuentra tus Mascotas</h3>
+                <p>Filtra animales por preferencia, caracteristicas y gustos. Cada perfil dispoonible tiene sus propias caracteristicas.</p>
+            </div>
+            <div>
+                <h3>Tene una entrevista</h3>
+                <p>Programa hasta tres entrevista para asegurar una buena relacion y disfrutar de la compañia de tu futuro compañero</p>
+            </div>
+        </div>
+        <button><a href="{{ url_for('about')}}">Mas Info</a></button>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h1>Como Se ven nuestras Mascostas?</h1>
+        <p>Descubre tu siguiente compañia leal! Nuestro refugio es casa de un gran rango de mascotas rescatadas, cada uno esperando por una amorosa familia. Adoptando no solo estas cambiando una vida- Estas haciendo una diferencia para incontables otras. Visitanos hoy y encuentra un amigo que va traer felicidady amor incondicional a ttu vida!</p>
+        {% for i in range(0,4)%}
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div>
+        <a href="{{ url_for('pets')}}">Ver todo</a>
+        <img src="" alt="">
+    </div>
+</section>
+
+<section>
+    <div>
+        <h1>Preeguntas Frecuentes</h1>
+        <p>Te garantizamos informacion para hacer tu experiencia lo mejor posible. Si no encuentras lo que estas buscando, no dudes en contactarnos.</p>
+    </div>
+    <img src="" alt="">
+    <div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Accordion Item #1
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Accordion Item #2
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Accordion Item #3
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+
+    </div>
+</section>
+{% endblock%}

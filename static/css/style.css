@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #FFF8E8;
+}
+
+.navbar-brand{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #2659FF;
+}
+
+.nav-item{
+    padding: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: #2659FF !important;
+    font-weight: bold;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #2659FF !important;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2659FF;
+}
